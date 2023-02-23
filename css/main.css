@@ -1,3 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;400;700&display=swap');
+
+/* Variables */
+:root {
+    --black-1-color: #000000;
+    --black-2-color: #191919;
+    --light-1-color: #ffffff;
+    --light-theme-color: #47afac;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -10,8 +20,8 @@ body {
 
 a {
     text-decoration: none;
-    display: inline;
-    color: black;
+    /* display: inline; */
+    color: var(--black-1-color);
 }
 
 header {
@@ -25,7 +35,7 @@ header .header-icons-container {
     width: 100%;
     height: 50px;
     display: grid;
-    background-color: #47afac;
+    background-color: var(--light-theme-color);
 }
 
 header .header-icons-container .icons {
@@ -37,4 +47,84 @@ header .header-icons-container .icons {
     justify-content: space-between;
     justify-self: end;
     margin-right: 50px;
+}
+
+header .icons span {
+    color: var(--light-1-color);
+}
+
+nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 90px;
+    font-family: 'Roboto Slab', monospace, sans-serif;
+}
+
+nav .nav-logo-container {
+    margin-left: 50px;
+}
+
+nav .nav-logo-container img {
+    width: 220px;
+    margin-top: 10px;
+}
+
+nav .profile-link {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 50px;
+}
+
+nav .profile-link a {
+    color: var(--black-1-color);
+    border-bottom: 1px solid --black-1-color;
+}
+
+main {
+    background-image: url('../assets/img/Cover.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+}
+
+main .banner {
+    display: flex;
+    justify-content: center;
+    /* background-color: var(--black-2-color); */
+    height: 700px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+main .banner .banner--main {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+main .banner .banner--main h1 {
+    font-family: 'Roboto Slab', monospace, sans-serif;
+    font-weight: 700;
+    color: var(--light-1-color);
+    text-align: center;
+    /* margin: 7vw 15vw; */
+}
+
+main .banner .banner--main button{
+    background-color: var(--light-theme-color);
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    border-style: none;
+    font-weight: bold;
+    align-self: flex-start;
+} 
+
+main .banner .banner--main button a{
+    color: var(--light-1-color);
 }
