@@ -10,7 +10,7 @@
 </head>
 <body>
     <header>
-        <section class="header-icons-container">
+        <section class="header__icons--container">
             <div class="icons">
                 <a href="/"><span class="flaticon-001-facebook"></span></a>
                 <a href="/"><span class="flaticon-002-twitter"></span></a>
@@ -20,54 +20,75 @@
             </div>
         </section>
         <nav>
-            <section class="nav-logo-container">
+            <section class="nav__logo--container">
                 <a href="/"><img src="./assets/img/logo-negro.png" alt="Logo de mi blog"></a>
             </section>
-            <section class="profile-link">
+            <section class="profile__link">
                 <a href="perfil.html">Sobre mi</a>
             </section>
         </nav>
     </header>
-    <main>
-        <section class="blogs--principal">
-            <div class="blogs--portada">
-                <p class="blogs--subtitle">Artículo de la semana</p>
-                <div class="blogs--portada__destacado">
-                    <div class="blog--imagen__destacado">
-                        <img src="./assets/img/main-news-img.png" alt="">
-                    </div>
-                    <div class="blog--articulo__destacado">
-                        <h2 class="titulo-destacado">Título del artículo</h2>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate doloribus nulla quo et quasi tempora fugiat alias atque rem numquam.</p>
-                        <button class="blog--button"><a href="#">Leer más</a></button>
-                    </div>    
-                </div>
-            </div> <!-- Fin de class = "blogs--portada"-->
-        </section> <!-- Fin de class = "blogs--principal"-->
-
-        <section class="blogs--grilla">
-            <h2>Últimos artículos</h2>
-            <div class="blogs--grilla--cuadrados">
-                <div class="blogs--titular">
-                    <img src="./assets/img/post-1.png" alt="Artículo 1">
-                    <h3>Título del artículo</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est nesciunt ipsa, sit totam officia provident suscipit!</p>
-                    <button class="blog--button"><a href="#">Leer más</a></button>
-                </div>
-                <div class="blogs--titular">
-                    <img src="./assets/img/post-1.png" alt="Artículo 1">
-                    <h3>Título del artículo</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est nesciunt ipsa, sit totam officia provident suscipit!</p>
-                    <button class="blog--button"><a href="#">Leer más</a></button>
-                </div>
-                <div class="blogs--titular">
-                    <img src="./assets/img/post-1.png" alt="Artículo 1">
-                    <h3>Título del artículo</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est nesciunt ipsa, sit totam officia provident suscipit!</p>
-                    <button class="blog--button"><a href="#">Leer más</a></button>
+    <main class="blog__main">
+        <section class="blogs__news--container">
+            <div class="blogs__main--new">
+                <h3>Artículo de la semana</h3>
+                <div class="blogs__news--img-container">
+                    <img src="/assets/img/main-news-img.png" alt="Noticia de la semana">
+                </div> <!-- Fin de class = "blogs__main--new"-->
+                <div class="blog__news--info-container">
+                    <h2>Título del artículo</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate doloribus nulla quo et quasi tempora fugiat alias atque rem numquam.Est nesciunt ipsa, sit totam officia provident suscipit!</p>
+                    <a href="/" class="blogs__button">Leer más</a> 
                 </div>
             </div>
+        </section> <!-- Fin de class = "blogs__news--container"-->
+
+        <section class="blogs__posts--container">
+            <!-- <div class="blogs--grilla--cuadrados"> -->
+            <div>
+                <h3>Título del artículo</h3>
+                <article class="post__container">
+                    <img src="./assets/img/post-1.png" alt="Artículo 1">
+                    <h4>Artículo</h4>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est nesciunt ipsa, sit totam officia provident suscipit!</p>
+                    <a href="#" class="blogs__button">Leer más</a>
+                </article>    
+                <article class="post__container">
+                    <img src="./assets/img/post-2.png" alt="Artículo 2">
+                    <h4>Artículo</h4>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est nesciunt ipsa, sit totam officia provident suscipit!</p>
+                    <a href="#" class="blogs__button">Leer más</a>
+                </article>
+                <article class="post__container">
+                    <img src="./assets/img/post-3.png" alt="Artículo 3">
+                    <h4>Artículo</h4>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est nesciunt ipsa, sit totam officia provident suscipit!</p>
+                    <a href="#" class="blogs__button">Leer más</a>
+                </article>
+                <article class="post__container">
+                    <img src="./assets/img/post-1.png" alt="Artículo 1">
+                    <h4>Artículo</h4>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est nesciunt ipsa, sit totam officia provident suscipit!</p>
+                    <a href="#" class="blogs__button">Leer más</a>
+                </article>
+                <article class="post__container">
+                    <img src="./assets/img/post-2.png" alt="Artículo 1">
+                    <h4>Artículo</h4>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est nesciunt ipsa, sit totam officia provident suscipit!</p>
+                    <a href="#" class="blogs__button">Leer más</a>
+                </article>
+                <article class="post__container">
+                    <img src="./assets/img/post-3.png" alt="Artículo 1">
+                    <h4>Artículo</h4>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est nesciunt ipsa, sit totam officia provident suscipit!</p>
+                    <a href="#" class="blogs__button">Leer más</a>
+                </article>
+            </div>
+            <!-- </div> -->
         </section>
     </main>
+    <footer>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+    </footer>
 </body>
 </html>

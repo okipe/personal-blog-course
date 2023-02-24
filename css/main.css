@@ -13,17 +13,20 @@ body {
     font-family: 'Roboto Mono', monospace;
     margin: 0;
     padding: 0;
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
 }
 
 a {
     text-decoration: none;
     /* display: inline; */
     color: var(--black-1-color);
+}
+
+.home__body {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 
 h2 {
@@ -40,14 +43,14 @@ header {
     grid-template-rows: 1fr 1fr;
 }
 
-header .header-icons-container {
+header .header__icons--container {
     width: 100%;
     height: 50px;
     display: grid;
     background-color: var(--light-theme-color);
 }
 
-header .header-icons-container .icons {
+header .header__icons--container .icons {
     width: 300px;
     height: auto;
     display: flex;
@@ -69,30 +72,30 @@ nav {
     font-family: 'Roboto Slab', monospace, sans-serif;
 }
 
-nav .nav-logo-container {
+nav .nav__logo--container {
     margin-left: 50px;
 }
 
-nav .nav-logo-container img {
+nav .nav__logo--container img {
     width: 220px;
     margin-top: 10px;
 }
 
-nav .profile-link {
+nav .profile__link {
     display: flex;
     align-items: center;
     justify-content: flex-end;
     margin-right: 50px;
 }
 
-nav .profile-link a {
+nav .profile__link a {
     color: var(--black-1-color);
     border-bottom: 1px solid var(--black-1-color);
 }
 
 /* Estilos del home */
 
-.home-main {
+.home__main {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
     height: 100%;
@@ -102,7 +105,7 @@ nav .profile-link a {
     background-position: center;
 }
 
-.home-main section {
+.home__main section {
     display: grid;
     grid-column: 2;
     justify-items: center;
@@ -110,7 +113,7 @@ nav .profile-link a {
     margin-top: 80px;
 }
 
-.home-main-text {
+.home__main--text {
     font-family: 'Roboto mono', monospace;
     font-size: 30px;
     font-weight: 700px;
@@ -120,7 +123,7 @@ nav .profile-link a {
     color: var(--light-1-color);
 }
 
-.home-main-button {
+.home__main--button {
     display: grid;
     align-items: center;
     background-color: var(--light-theme-color);
@@ -132,13 +135,106 @@ nav .profile-link a {
     box-shadow: -7px 7px 7px -7px rgba(0,0,0,1);
 }
 
-.home-main-button a {
+.home__main--button a {
     font-weight: bold;
     font-size: 18px;
     color: var(--light-1-color);
 }
 
-/* Estilos de parrilla de blogs*/
+.blogs__main {
+    display: grid;
+}
+
+.blogs__news--container {
+    display: flex;
+    background-color: var(--light-highliht-color);
+    padding: 0 50px 40px;
+    justify-content: center;
+}
+
+.blogs__main--new {
+    display: grid;
+    /* grid-template-columns: 2fr 1fr; */
+    grid-template-columns: minmax(50px, 600px) minmax(50px, 800px);
+    grid-template-rows: 2fr;
+}
+
+.blogs__news--img-container {
+    grid-column: 1;
+}
+
+.blogs__news--img-container img {
+    width: 85%;
+}
+
+.blogs__news--info-container {
+    grid-column: 2;
+}
+
+.blogs__news--info-container p {
+    margin-bottom: 35px;
+}
+
+.blogs__posts--container {
+    padding: 0 50px 40px;
+}
+
+.blogs__posts--container h3 {
+    border-bottom: 1px solid #cdd2da;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.blogs__button {
+    border: 1px solid  var(--light-theme-color);
+    padding: 10px 15px;
+    font-size: 12px;
+    border-radius: 5px;
+}
+
+.blogs__button:hover {
+    border: 1px solid var(--light-1-color);
+    color: var(--light-1-color);
+    background-color: var(--light-theme-color);
+}
+
+.blogs__posts--container .post__container {
+    display: inline-block;
+    padding-left: 10px;
+    max-width: 30%;
+    margin-bottom: 50px;
+}
+
+.blogs__posts--container .post__container p {
+    margin-bottom: 35px;
+}
+
+.post__container h4 {
+    font-weight: bold;
+
+}
+
+.blogs__posts--container .post__container img {
+    width: 100%;
+}
+
+footer {
+    width: 100%;
+    height: 80px;
+    background-color: var(--black-2-color);
+    border-top: 35px solid var(--light-theme-color);
+    text-align: center;
+}
+
+footer p {
+    color: var(--light-1-color);
+    margin-top: 30px;
+}
+
+/* INTENTO BLOG
+
+
+Estilos de parrilla de blogs
 
 .blogs--subtitle {
     font-weight: bold;
@@ -205,6 +301,7 @@ nav .profile-link a {
     font-weight: bold;
 }
 
+*/
 
 /* 
 INTENTO PORTADA
