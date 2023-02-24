@@ -29,6 +29,11 @@ a {
     right: 0;
 }
 
+.grid__container {
+    max-width: 980px;
+    margin: auto;
+}
+
 h2 {
     font-weight: bold;
     font-size: 32px;
@@ -141,6 +146,8 @@ nav .profile__link a {
     color: var(--light-1-color);
 }
 
+/*Estilos de blogs*/
+
 .blogs__main {
     display: grid;
 }
@@ -231,6 +238,58 @@ footer p {
     margin-top: 30px;
 }
 
+.blogspot__img--container {
+    padding: 0 50px 40px;
+}
+
+.blogspot__img--container img {
+    width: 100%;
+}
+
+.blogspot__main--container {
+    padding: 0 50px 40px;
+}
+
+.blogspot__main--container h3 {
+    border-bottom: 1px solid var(--light-highliht-color);
+    padding-bottom: 20px;
+}
+
+.blogspot__main--container article h1 {
+    font-size: 35px;
+}
+
+.contact__main--container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 200px;
+    padding: 50px;
+    background-color: var(--light-highliht-color);
+}
+
+.contact__main--container .contact--left,
+.contact__main--container .contact--right {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    gap: 50px;
+    
+}
+
+.contact__main--container .contact--left {
+    padding-left: 100px;
+}
+
+.contact__main--container .contact--right {
+    padding-right: 100px;
+}
+
+.contact__main--container img {
+    width: 100px;
+}
+
+
+/* INTENTO CONTACTO */
+
 /* INTENTO BLOG
 
 
@@ -303,8 +362,7 @@ Estilos de parrilla de blogs
 
 */
 
-/* 
-INTENTO PORTADA
+/* INTENTO PORTADA
 
 main {
     background-image: url('../assets/img/Cover.png');
@@ -317,7 +375,6 @@ main {
 main .banner {
     display: flex;
     justify-content: center;
-    /* background-color: var(--black-2-color); */ /*
     height: 700px;
     width: 100%;
     margin: 0 auto;
